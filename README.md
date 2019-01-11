@@ -23,7 +23,7 @@ In addition, the possibility of defining priorities is provided in case differen
 
 Using keras-updater is very simple. You only have to add Updater to the callbacks of the model you want to train, Updater by default returns a list. So it should be included like this:
 
-```
+```python
 model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
@@ -34,7 +34,7 @@ model.fit(x_train, y_train,
 
 The reason for this is that Updater is also capable of modifying other callbacks! For this reason, they can be included in it so that they can be modified when desired.
 
-```
+```python
 model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
